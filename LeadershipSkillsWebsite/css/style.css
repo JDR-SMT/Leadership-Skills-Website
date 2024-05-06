@@ -5,7 +5,7 @@
 .title-container {
     height: 80px;
     max-width: 400px;
-    margin: 30px auto 30px auto;
+    margin: 15px auto 25px auto;
     align-content: center;
     border-bottom: 2px solid #EAAD18;
 }
@@ -92,7 +92,7 @@ a:hover {
 
 #techtarget-container {
     max-width: 580px;
-    margin: 30px auto auto;
+    margin: 25px auto auto;
 }
 
 #techtarget-button {
@@ -194,7 +194,7 @@ form#form-filter {
     height: 50px;
     width: 135px;
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     left: 30%;
 }
 
@@ -280,6 +280,6 @@ form#form-filter {
 
     .card {
         width: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
