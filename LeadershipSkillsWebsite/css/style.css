@@ -5,7 +5,8 @@
 .title-container {
     height: 80px;
     max-width: 400px;
-    margin: 50px auto 30px auto;
+    margin: 30px auto 30px auto;
+    align-content: center;
     border-bottom: 2px solid #EAAD18;
 }
 
@@ -24,7 +25,7 @@
 /* Link */
 a:hover {
     background-color: #E8E8E8;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 /* Button */
@@ -35,7 +36,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     border: 2px solid #EAAD18;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .button-text {
@@ -61,20 +62,20 @@ a:hover {
 #logo {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .navbar-nav {
-    position: fixed;
+    position: absolute;
     right: 10px;
+}
+
+.navbar-nav > li {
+    padding-left: 10px;
 }
 
 .navbar-toggler {
     border: 2px solid #EAAD18;
-}
-
-.navbar-toggler:hover {
-    background-color: #E8E8E8;
 }
 
 .navbar-toggler:active {
@@ -90,14 +91,13 @@ a:hover {
 }
 
 #techtarget-container {
-    margin-top: 30px;
-    padding-right: 50px;
-    display: flex;
-    justify-content: end;
+    max-width: 580px;
+    margin: 30px auto auto;
 }
 
 #techtarget-button {
     width: 250px;
+    margin: auto 0px auto auto;
 }
 
 /* Questions */
@@ -152,6 +152,10 @@ a:hover {
     margin-left: auto;
 }
 
+form#form-filter {
+    margin-bottom: 0px;
+}
+
 .offcanvas-body {
     display: flex;
     flex-direction: column;
@@ -161,22 +165,62 @@ a:hover {
     margin-top: 10px;
 }
 
-.list-group-item {
+.form-check {
+    padding: 0px;
+}
+
+.form-check>label {
     padding: 2px;
-    border-bottom: none;
-    font-size: 14px;
+    font-size: 14.5px;
+    opacity: 0.75;
+}
+
+.form-check>label:hover {
+    opacity: 1;
+}
+
+.form-check>label.btn {
+    margin-bottom: 5px;
+    border: none;
+}
+
+.btn-check:checked+.btn {
+    opacity: 1;
+    font-weight: 600;
+    color: #EAAD18;
 }
 
 #apply-button {
+    height: 50px;
     width: 135px;
-    margin: auto 0px 0px auto;
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
 }
 
 /* Accordion */
-accordion-header-light {
-    background-color: #f8f9fa;
+.accordion {
+    --bs-accordion-border-color: #EAAD18;
+    --bs-accordion-border-width: 2px;
 }
 
+.body-container {
+    height: 35px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #EAAD18;
+}
+
+#answer-container {
+    margin-top: 20px;
+}
+
+.body-title {
+    font-size: 18px;
+}
+
+#body-text {
+    font-size: 15px;
+}
 
 /* Contact */
 #card-container {
@@ -190,7 +234,7 @@ accordion-header-light {
 .card {
     width: 300px;
     border: 2px solid #EAAD18;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .card-title {
@@ -213,13 +257,29 @@ accordion-header-light {
     width: 210px;
 }
 
-/* Mobile devices */
+/* Mobile */
 @media only screen and (max-width: 450px) {
     .title {
-        font-size: 21px;
+        font-size: 22px;
     }
 
-    #intro-text {
-        font-size: 15px;
+    #logo {
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #card-container {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 30px;
     }
 }
