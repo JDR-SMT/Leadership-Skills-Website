@@ -1,0 +1,225 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
+
+/* Title */
+.title-container {
+    height: 80px;
+    max-width: 400px;
+    margin: 50px auto 30px auto;
+    border-bottom: 2px solid #EAAD18;
+}
+
+.title {
+    font-family: 'Libre Baskerville';
+    font-size: 27px;
+    text-align: center;
+}
+
+/* Icon */
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+/* Link */
+a:hover {
+    background-color: #E8E8E8;
+    border-radius: 12px;
+}
+
+/* Button */
+.btn {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #EAAD18;
+    border-radius: 12px;
+}
+
+.button-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #E8E8E8;
+    border: 2px solid #EAAD18;
+}
+
+/* Nav */
+.navbar {
+    border-bottom: 2px solid #EAAD18;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    position: fixed;
+    right: 10px;
+}
+
+.navbar-toggler {
+    border: 2px solid #EAAD18;
+}
+
+.navbar-toggler:hover {
+    background-color: #E8E8E8;
+}
+
+.navbar-toggler:active {
+    border: none;
+}
+
+/* Home */
+#intro-text {
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#techtarget-container {
+    margin-top: 30px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+#techtarget-button {
+    width: 250px;
+}
+
+/* Questions */
+#questions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#questions-title {
+    grid-column-start: 2;
+}
+
+#filter-container {
+    margin-left: auto;
+}
+
+#filter-button {
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    border: none;
+}
+
+/* Offcanvas */
+.offcanvas {
+    width: 350px !important;
+}
+
+.offcanvas-header {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.offcanvas-title {
+    margin-right: auto;
+}
+
+#clear-all-link {
+    margin-right: 20px;
+    margin-left: auto;
+    color: black;
+    opacity: 0.75;
+}
+
+#clear-all-link:hover {
+    background: none;
+    opacity: 1;
+}
+
+.btn-close {
+    margin-left: auto;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    margin-top: 10px;
+}
+
+.list-group-item {
+    padding: 2px;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+#apply-button {
+    width: 135px;
+    margin: auto 0px 0px auto;
+}
+
+/* Accordion */
+accordion-header-light {
+    background-color: #f8f9fa;
+}
+
+
+/* Contact */
+#card-container {
+    width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid #EAAD18;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+#card-button {
+    width: 210px;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 450px) {
+    .title {
+        font-size: 21px;
+    }
+
+    #intro-text {
+        font-size: 15px;
+    }
+}
